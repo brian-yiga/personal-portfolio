@@ -45,6 +45,7 @@ section {
 
 .fa-bars {
     font-size: 45px;
+    color: var(--darkGray);
 }
 
 .intro {
