@@ -1,0 +1,81 @@
+/*VARIABLES*/
+:root {
+    --primary: #fdbd14;
+    --secondary: #9bfd0b;
+    --blue: #7F8CFF;
+    --white: #f3f4f6;
+    --brown: #b1894d;
+    --black: #172B4D;
+    --darkGray: #505F79;
+}
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+/*MOBILE STYLING*/
+body {
+    background-color: #f4d3f2;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./assets/mobile_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--white);
+}
+
+section {
+    padding: 70px 20px;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 7px;
+}
+
+.fa-bars {
+    font-size: 45px;
+}
+
+.intro {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 66px;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.introParagraph {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: var(--black);
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.connect {
+    color: var(--blue);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.socialIcons {
+    font-size: 30px;
+    color: var(--darkGray);
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+
