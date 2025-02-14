@@ -24,11 +24,11 @@
     </header>
     <section>
       <div class="hero">
-        <h1 class="intro">
+        <h1 class="intro title">
           Hey there. I'm Brian. <br /><span>I'm a software developer</span>
         </h1>
 
-        <p class="introParagraph">
+        <p class="introParagraph paragraph">
           I can help you build a product, feature or website. Look through some
           of my work and experience! If you like what you see and have a project
           you need coded, do not hesitate to contact me.
@@ -63,12 +63,16 @@
               Showcasing my projects in web development, React, and JavaScript,
               highlighting creativity, functionality, and innovation
             </p>
-            <div class="tags">
+            <div class="tags projectTags">
               <p>HTML</p>
               <p>CSS</p>
               <p>JavaScript</p>
             </div>
-            <button class="projectBtn"><a href="https://new.northgreen.ac.ug/" target="_blank">See project</a></button>
+            <button class="projectBtn">
+              <a href="https://new.northgreen.ac.ug/" target="_blank"
+                >See project</a
+              >
+            </button>
           </div>
         </div>
 
@@ -83,14 +87,18 @@
           <div class="projectContent">
             <h1 class="projectTitle">Akii Bua Sports Programme</h1>
             <p class="projectDescription">
-                The Akii Bua Sports Programme website highlights athlete development, events, and opportunities, promoting sports excellence and youth empowerment. 🏅🔥
+              The Akii Bua Sports Programme website highlights athlete
+              development, events, and opportunities, promoting sports
+              excellence and youth empowerment. 🏅🔥
             </p>
-            <div class="tags">
+            <div class="tags projectTags">
               <p>HTML</p>
               <p>CSS</p>
               <p>JavaScript</p>
             </div>
-            <button class="projectBtn"><a href="http://akiisports.com/" target="_blank">See project</a></button>
+            <button class="projectBtn">
+              <a href="http://akiisports.com/" target="_blank">See project</a>
+            </button>
           </div>
         </div>
 
@@ -103,16 +111,24 @@
             />
           </div>
           <div class="projectContent">
-            <h1 class="projectTitle">Sandy Castle Kindergarten Launch Website</h1>
+            <h1 class="projectTitle">
+              Sandy Castle Kindergarten Launch Website
+            </h1>
             <p class="projectDescription">
-                A vibrant Kindergarten Launch website showcasing programs, facilities, and enrollment details, designed to engage parents and create a welcoming experience. 🎨✨
+              A vibrant Kindergarten Launch website showcasing programs,
+              facilities, and enrollment details, designed to engage parents and
+              create a welcoming experience. 🎨✨
             </p>
-            <div class="tags">
+            <div class="tags projectTags">
               <p>HTML</p>
               <p>CSS</p>
               <p>JavaScript</p>
             </div>
-            <button class="projectBtn"><a href="https://sandy-castle-launch.netlify.app/" target="_blank">See project</a></button>
+            <button class="projectBtn">
+              <a href="https://sandy-castle-launch.netlify.app/" target="_blank"
+                >See project</a
+              >
+            </button>
           </div>
         </div>
 
@@ -127,17 +143,100 @@
           <div class="projectContent">
             <h1 class="projectTitle">Quote Generator</h1>
             <p class="projectDescription">
-                A simple Quotes Generator website that displays random inspirational quotes with a click, enhancing motivation and positivity effortlessly. 🚀
+              A simple Quotes Generator website that displays random
+              inspirational quotes with a click, enhancing motivation and
+              positivity effortlessly. 🚀
             </p>
-            <div class="tags">
+            <div class="tags projectTags">
               <p>HTML</p>
               <p>CSS</p>
               <p>JavaScript</p>
             </div>
-            <button class="projectBtn"><a href="https://abc-quote-generator.netlify.app/" target="_blank">See project</a></button>
+            <button class="projectBtn">
+              <a href="https://abc-quote-generator.netlify.app/" target="_blank"
+                >See project</a
+              >
+            </button>
           </div>
         </div>
       </div>
     </main>
+    <div class="aboutMeContacts">
+      <img
+        src="./assets/aboutme_bg2.png"
+        alt="BackgroundIcon"
+        class="aboutMeImage"
+      />
+      <div class="aboutMe">
+        <h1 class="title aboutMeTitle">About me</h1>
+        <p class="paragraph aboutMePara">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, do not hesitate to contact me.
+        </p>
+        <button class="resumeBtn">Get my resume</button>
+      </div>
+    </div>
+    <div class="tools">
+      <div class="toolCard languages">
+        <img
+          src="./assets/Icon Language.png"
+          alt="Globe Icon"
+          class="toolIcon"
+        />
+        <h2>Languages</h2>
+        <div class="toolTags">
+          <div>HTML</div>
+          <div>CSS</div>
+          <div>JavaScript</div>
+        </div>
+      </div>
+
+      <div class="toolCard frameworks">
+        <img
+          src="./assets/icon-frameworks.png"
+          alt="Cube Icon"
+          class="toolIcon"
+        />
+        <h2>Frameworks</h2>
+        <div class="toolTags">
+          <div>React.js</div>
+          <div>Next.js</div>
+          <div>Mantine</div>
+          <div>Strapi</div>
+        </div>
+      </div>
+
+      <div class="toolCard languages">
+        <img src="./assets/icon-skills.png" alt="Globe Icon" class="toolIcon" />
+        <h2>Skills</h2>
+        <div class="toolTags">
+          <div>Web Development</div>
+          <div>CLI</div>
+          <div>Version Control</div>
+          <div>API Design</div>
+        </div>
+      </div>
+      <div class="contactForm">
+        <h1>
+            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+        </h1>
+        <form action="submit" class="formInput">
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Email address">
+            <textarea name="message" id="textArea" placeholder="Hey I'd like to connect to..."></textarea>
+            <button class="contactBtn">Get in touch</button>
+        </form>
+        <p class="contactEmail paragraph">brianyiga@gmail.com</p>
+        <div class="socialMedia footerIcons">
+            <div class="socialIcons">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-tiktok"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+          </div>
+      </div>
+    </div>
   </body>
 </html>
