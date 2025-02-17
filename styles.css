@@ -19,12 +19,25 @@
 
 a {
     text-decoration: none;
-    color: var(--white);
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: var(--green);
+}
+
+a:active {
+    color: var(--darkGray);
 }
 
 /*BASE STYLES*/
 button {
-    background-color: var(--green);
+    background: linear-gradient(90deg, var(--green) 0%, var(--darkGray) 100%);
+    /* background-color: var(--green); */
     color: var(--white);
     font-size: 17px;
     font-weight: 500;
@@ -32,7 +45,17 @@ button {
     padding: 15px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
+
+button:hover {
+    transform: scale(1.1);
+    background-color: rgb(218, 196, 122);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: var(--darkBlue);
+}
+
 
 .title {
     font-size: 40px;
@@ -115,6 +138,10 @@ span {
     gap: 20px;
     width: 80%;
     margin: 0 auto;
+}
+
+.fa-brands {
+    color: var(--darkGray);
 }
 
 .arrowBtn {
@@ -292,6 +319,7 @@ input {
     height: 40px;
     border: 1px solid rgb(223, 222, 222);
     border-radius: 5px;
+    padding: 10px;
 }
 
 input::placeholder,
@@ -323,4 +351,5 @@ textarea {
     width: 80%;
     margin: 0 auto;
 }
+
 
