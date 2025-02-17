@@ -1,0 +1,158 @@
+/*VARIABLES*/
+:root {
+  --white: #f3f4f6;
+  --black: #172b4d;
+  --darkGray: #505f79;
+  --green: #36b37e;
+  --darkBlue: #172b4d;
+  --lightGrey: #ebf0ee;
+  --fontColor: #3a4a42;
+}
+
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter";
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--green);
+}
+
+a:active {
+  color: var(--darkGray);
+}
+
+/*BASE STYLES*/
+button {
+  background: linear-gradient(90deg, var(--green) 0%, var(--darkGray) 100%);
+  /* background-color: var(--green); */
+  color: var(--white);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: rgb(218, 196, 122);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: var(--darkBlue);
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: var(--darkBlue);
+}
+
+.paragraph {
+  font-size: 25px;
+  line-height: 33px;
+  font-weight: 300;
+  color: var(--darkBlue);
+}
+
+/*MOBILE STYLING*/
+.pageContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projectImage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.projectTitle {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.projectDescription {
+  font-size: 1em;
+  font-weight: 200;
+  text-align: justify;
+  margin-bottom: 25px;
+  line-height: 25px;
+}
+
+.toolTags {
+  display: flex;
+  gap: 0.6em;
+  margin-bottom: 1em;
+}
+
+.toolTags div {
+  background-color: var(--lightGrey);
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.mainBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailBtnsDesktop,
+.detailBtnsMobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em;
+  padding-bottom: 40px;
+}
+
+.detailBtnsDesktop {
+  display: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 785px) {
+    .pageContainer {
+        max-width: 1200px;
+    }
+
+  .detailBtnsDesktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2em;
+    padding-bottom: 40px;
+  }
+
+  .detailBtnsMobile {
+    display: none;
+  }
+
+  .titleAndBtns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1em 0;
+  }
+
+  .projectTitle {
+    margin: 0;
+  }
+}

@@ -19,224 +19,315 @@
   </head>
   <body>
     <header>
-      <!-- <img src="./assets/logo.jpg" alt="Brian Yiga's Logo" class="logo" /> -->
+      
+      <!--DESKTOP MENU-->
+      <nav class="desktopNavBar">
+        <ul class="navList">
+          <li class="navItems"><a href="#portfolio">Portfolio</a></li>
+          <li class="navItems"><a href="#aboutMeSection">About</a></li>
+          <li class="navItems"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!--MOBILE MENU-->
+      <div class="mobileMenuContainer">
+        <div class="mobileMenuSection">
+          <ul class="mobileMenu">
+            <li class="menuList">Home</li>
+            <li class="menuList">Portfolio</li>
+            <li class="menuList">Contact</li>
+            <li class="menuList">About</li>
+          </ul>
+        </div>
+      </div>
       <i class="fa-solid fa-bars"></i>
+      
+     
     </header>
-    <section>
-      <div class="hero">
-        <h1 class="intro title">
-          Hey there. I'm Brian. <br /><span>I'm a software developer</span>
-        </h1>
+    <section id="homePage">
+      <section>
+        <div class="hero">
+          <h1 class="intro title">
+            Hey there. I'm Brian. <br /><span>I'm a software developer</span>
+          </h1>
 
-        <p class="introParagraph paragraph">
-          I can help you build a product, feature or website. Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, do not hesitate to contact me.
-        </p>
-      </div>
-      <div class="socialMedia">
-        <div class="socialIcons">
-          <a href="https://x.com/i/flow/login?mx=2" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-          <a href="https://www.tiktok.com/@jigga563?_t=ZM-8tzHGJSbotq&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="https://www.linkedin.com/in/brian-yiga-7b93272a8/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
-        </div>
-      </div>
-      <button class="arrowBtn">
-        <img src="./assets/Disabled.png" alt="Arrow Down button" />
-      </button>
-    </section>
-    <main>
-      <h1 class="worksTitle">My Recent Works</h1>
-      <div class="projectsContainer">
-        <div class="projectCard theNorthGreen">
-          <div class="projectImageContainer">
-            <img
-              src="./assets/tngsProject.jpg"
-              alt="The North Green School Website Screenshot"
-              class="projectImage"
-            />
-          </div>
-          <div class="projectContent">
-            <h1 class="projectTitle">The North Green School Website</h1>
-            <p class="projectDescription">
-              Showcasing my projects in web development, React, and JavaScript,
-              highlighting creativity, functionality, and innovation
-            </p>
-            <div class="tags projectTags">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
+          <p class="introParagraph paragraph">
+            I can help you build a product, feature or website. Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, do not hesitate to contact me.
+          </p>
+          <div class="socialMedia">
+            <div class="socialIcons">
+              <a href="https://x.com/i/flow/login?mx=2" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@jigga563?_t=ZM-8tzHGJSbotq&_r=1"
+                target="_blank"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/brian-yiga-7b93272a8/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
             </div>
-            <button class="projectBtn">
-              <a href="https://new.northgreen.ac.ug/" target="_blank"
-                >See project</a
-              >
-            </button>
           </div>
         </div>
 
-        <div class="projectCard akiiSports">
-          <div class="projectImageContainer">
-            <img
-              src="./assets/akiiProject.jpg"
-              alt="The North Green School Website Screenshot"
-              class="projectImage"
-            />
-          </div>
-          <div class="projectContent">
-            <h1 class="projectTitle">Akii Bua Sports Programme</h1>
-            <p class="projectDescription">
-              The Akii Bua Sports Programme website highlights athlete
-              development, events, and opportunities, promoting sports
-              excellence and youth empowerment. 🏅🔥
-            </p>
-            <div class="tags projectTags">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
+        <button class="arrowBtn">
+          <img src="./assets/Disabled.png" alt="Arrow Down button" />
+        </button>
+      </section>
+      <main>
+        <h1 class="worksTitle">My Recent Works</h1>
+        <div class="projectsContainer" id="portfolio">
+          <div class="projectCard theNorthGreen">
+            <div class="projectImageContainer">
+              <img
+                src="./assets/tngsProject.jpg"
+                alt="The North Green School Website Screenshot"
+                class="projectImage"
+              />
             </div>
-            <button class="projectBtn">
-              <a href="http://akiisports.com/" target="_blank">See project</a>
-            </button>
+            <div class="projectContent">
+              <h1 class="projectTitle">The North Green School</h1>
+              <p class="projectDescription">
+                Showcasing my projects in web development, React, and
+                JavaScript, highlighting creativity, functionality, and
+                innovation
+              </p>
+              <div class="tags projectTags">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+              <button class="projectBtn">
+                <a href="pages/tngsDetails.html" target="_blank">See project</a>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="projectCard sandyCastle">
-          <div class="projectImageContainer">
-            <img
-              src="./assets/sandyCastle.jpg"
-              alt="The North Green School Website Screenshot"
-              class="projectImage"
-            />
-          </div>
-          <div class="projectContent">
-            <h1 class="projectTitle">
-              Sandy Castle Kindergarten Launch Website
-            </h1>
-            <p class="projectDescription">
-              A vibrant Kindergarten Launch website showcasing programs,
-              facilities, and enrollment details, designed to engage parents and
-              create a welcoming experience. 🎨✨
-            </p>
-            <div class="tags projectTags">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
+          <div class="projectCard akiiSports">
+            <div class="projectImageContainer">
+              <img
+                src="./assets/akiiProject.jpg"
+                alt="Akii Bua Sports Programme Landing Page Screenshot"
+                class="projectImage"
+              />
             </div>
-            <button class="projectBtn">
-              <a href="https://sandy-castle-launch.netlify.app/" target="_blank"
-                >See project</a
-              >
-            </button>
+            <div class="projectContent">
+              <h1 class="projectTitle">Akii Bua Sports Programme</h1>
+              <p class="projectDescription">
+                The Akii Bua Sports Programme website highlights athlete
+                development, events, and opportunities, promoting sports
+                excellence and youth empowerment. 🏅🔥
+              </p>
+              <div class="tags projectTags">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+              <button class="projectBtn">
+                <a href="pages/akiiDetails.html" target="_blank">See project</a>
+              </button>
+            </div>
           </div>
-        </div>
 
-        <div class="projectCard quotesSite">
-          <div class="projectImageContainer">
-            <img
-              src="./assets/lifeQuotes.jpg"
-              alt="The North Green School Website Screenshot"
-              class="projectImage"
-            />
-          </div>
-          <div class="projectContent">
-            <h1 class="projectTitle">Quote Generator</h1>
-            <p class="projectDescription">
-              A simple Quotes Generator website that displays random
-              inspirational quotes with a click, enhancing motivation and
-              positivity effortlessly. 🚀
-            </p>
-            <div class="tags projectTags">
-              <p>HTML</p>
-              <p>CSS</p>
-              <p>JavaScript</p>
+          <div class="projectCard sandyCastle">
+            <div class="projectImageContainer">
+              <img
+                src="./assets/sandyCastle.jpg"
+                alt="Sandy Castle Kindergarten Website Screenshot"
+                class="projectImage"
+              />
             </div>
-            <button class="projectBtn">
-              <a href="https://abc-quote-generator.netlify.app/" target="_blank"
-                >See project</a
-              >
-            </button>
+            <div class="projectContent">
+              <h1 class="projectTitle">Sandy Castle Kindergarten</h1>
+              <p class="projectDescription">
+                A vibrant Kindergarten Launch website showcasing programs,
+                facilities, and enrollment details, designed to engage parents
+                and create a welcoming experience. 🎨✨
+              </p>
+              <div class="tags projectTags">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+              <button class="projectBtn">
+                <a href="pages/sandyCastle.html" target="_blank">See project</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="projectCard quotesSite">
+            <div class="projectImageContainer">
+              <img
+                src="./assets/lifeQuotes.jpg"
+                alt="Quotes Generator Website Screenshot"
+                class="projectImage"
+              />
+            </div>
+            <div class="projectContent">
+              <h1 class="projectTitle">Quote Generator</h1>
+              <p class="projectDescription">
+                A simple Quotes Generator website that displays random
+                inspirational quotes with a click, enhancing motivation and
+                positivity effortlessly. 🚀
+              </p>
+              <div class="tags projectTags">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+              </div>
+              <button class="projectBtn">
+                <a href="pages/quotes.html" target="_blank">See project</a>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-    <div class="aboutMeContacts">
-      <img
-        src="./assets/aboutme_bg2.png"
-        alt="BackgroundIcon"
-        class="aboutMeImage"
-      />
-      <div class="aboutMe">
-        <h1 class="title aboutMeTitle">About me</h1>
-        <p class="paragraph aboutMePara">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, do not hesitate to contact me.
-        </p>
-        <button class="resumeBtn">Get my resume</button>
-      </div>
-    </div>
-    <div class="tools">
-      <div class="toolCard languages">
+      </main>
+      <div class="aboutMeContacts">
         <img
-          src="./assets/Icon Language.png"
-          alt="Globe Icon"
-          class="toolIcon"
+          src="./assets/aboutme_bg2.png"
+          alt="BackgroundIcon"
+          class="aboutMeImage"
         />
-        <h2>Languages</h2>
-        <div class="toolTags">
-          <div>HTML</div>
-          <div>CSS</div>
-          <div>JavaScript</div>
-        </div>
-      </div>
-
-      <div class="toolCard frameworks">
         <img
-          src="./assets/icon-frameworks.png"
-          alt="Cube Icon"
-          class="toolIcon"
+          src="./assets/illustration-about-me-2-desktop@2x.png"
+          alt="Background Vector"
+          class="aboutMeImageDesktop"
         />
-        <h2>Frameworks</h2>
-        <div class="toolTags">
-          <div>React.js</div>
-          <div>Next.js</div>
-          <div>Mantine</div>
-          <div>Strapi</div>
+        <div class="aboutMe" id="aboutMeSection">
+          <h1 class="title aboutMeTitle">About me</h1>
+          <p class="paragraph aboutMePara">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, do not hesitate to contact me.
+          </p>
+          <button class="resumeBtn">Get my resume</button>
         </div>
       </div>
 
-      <div class="toolCard languages">
-        <img src="./assets/icon-skills.png" alt="Globe Icon" class="toolIcon" />
-        <h2>Skills</h2>
-        <div class="toolTags">
-          <div>Web Development</div>
-          <div>CLI</div>
-          <div>Version Control</div>
-          <div>API Design</div>
+      <div class="designTools">
+        <div class="toolCard languages">
+          <img
+            src="./assets/Icon Language.png"
+            alt="Globe Icon"
+            class="toolIcon"
+          />
+          <h2>Languages</h2>
+          <div class="toolTags">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>JavaScript</div>
+          </div>
+        </div>
+
+        <div class="toolCard frameworks">
+          <img
+            src="./assets/icon-frameworks.png"
+            alt="Cube Icon"
+            class="toolIcon"
+          />
+          <h2>Frameworks</h2>
+          <div class="toolTags">
+            <div>React.js</div>
+            <div>Next.js</div>
+            <div>Mantine</div>
+            <div>Strapi</div>
+          </div>
+        </div>
+
+        <div class="toolCard languages">
+          <img
+            src="./assets/icon-skills.png"
+            alt="Globe Icon"
+            class="toolIcon"
+          />
+          <h2>Skills</h2>
+          <div class="toolTags">
+            <div>Web Development</div>
+            <div>CLI</div>
+            <div>Version Control</div>
+            <div>API Design</div>
+          </div>
         </div>
       </div>
+
       <div class="contactForm" id="contact">
         <h1>
-            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
         </h1>
-        <form action="https://formspree.io/f/mnnjodoe" method="POST" class="formInput">
-            <input type="text" name="Name" placeholder="Full Name" required>
-            <input type="email" name="Email" placeholder="Email address" required>
-            <textarea name="message" id="textArea" placeholder="Hey I'd like to connect to..." required></textarea>
-            <button type="submit" class="contactBtn">Get In Touch</button>
+        <form
+          action="https://formspree.io/f/mnnjodoe"
+          method="POST"
+          class="formInput"
+        >
+          <div class="nameInput">
+            <input
+              type="text"
+              name="First Name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="Last Name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+          <input
+            type="email"
+            name="Email"
+            placeholder="Email address"
+            required
+          />
+          <textarea
+            name="message"
+            id="textArea"
+            placeholder="Hey I'd like to connect to..."
+            required
+          ></textarea>
+          <button type="submit" class="contactBtn">Get In Touch</button>
         </form>
-        <p class="contactEmail paragraph">brianyiga@gmail.com</p>
+        <img
+          src="./assets/Frame@2x.png"
+          alt="Contact Me Vector"
+          class="contactMeBgImage"
+        />
+        <img
+          src="./assets/contactMeFrame1.svg"
+          alt="Contact Me Icon"
+          class="contactMeBgImage_2"
+        />
+        <img
+          src="./assets/contactMeFrame3.png"
+          alt="Contact Me Icon"
+          class="contactMeBgImage_3"
+        />
+      </div>
+
+      <p class="contactEmail paragraph">brianyiga@gmail.com</p>
+
+      <div class="footer">
         <div class="socialMedia footerIcons">
           <div class="socialIcons">
-            <a href="https://x.com/i/flow/login?mx=2"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.tiktok.com/@jigga563?_t=ZM-8tzHGJSbotq&_r=1"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://www.linkedin.com/in/brian-yiga-7b93272a8/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://x.com/i/flow/login?mx=2"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://www.tiktok.com/@jigga563?_t=ZM-8tzHGJSbotq&_r=1"
+              ><i class="fa-brands fa-tiktok"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/brian-yiga-7b93272a8/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
             <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
           </div>
-          </div>
+        </div>
       </div>
-    </div>
+    </section>
   </body>
 </html>
