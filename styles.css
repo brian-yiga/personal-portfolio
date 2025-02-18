@@ -293,8 +293,8 @@ main {
     margin-bottom: 30px;
 }
 
-.tools {
-    margin-top: 50px;
+.designTools {
+    margin-top: 3em;
 }
 
 .toolCard {
@@ -506,7 +506,7 @@ textarea {
     .designTools {
         display: flex;
         width: 80%;
-        margin: 7em auto 0 auto;
+        margin: 3em auto 0 auto;
         gap: 1em;
     }
 
@@ -518,7 +518,7 @@ textarea {
     .contactForm {
         display: flex;
         width: 80%;
-        margin: 0 auto 12em auto;
+        margin: 0 auto 3em auto;
         justify-content: center;
         align-items: center;
         gap: 1.3em;
