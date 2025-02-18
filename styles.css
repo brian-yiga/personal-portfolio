@@ -91,10 +91,10 @@ body {
 
 header {
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     padding: 5px;
-    background-color: var(--white);
+    background-color: white;
     position: fixed;
     top: 0;
     right: 0;
@@ -106,9 +106,32 @@ header {
 
 .mobileMenuSection {
     position: absolute;
-    top: 0;
+    top: 3.5em;
     left: 0;
+    width: 100%;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
 }
+
+.mobileMenu {
+    list-style: none;
+    text-align: center;
+    background-color: var(--green);
+    
+}
+
+.menuList {
+    padding: 0.8em 0;
+    font-size: 1.3em;
+    color: white;
+}
+
+.menuList:hover {
+    background-color: grey;
+    border-bottom: 1px solid var(--white);
+}
+
 
 section {
     padding: 70px 20px;
@@ -121,8 +144,8 @@ section {
 }
 
 .fa-bars {
-    font-size: 45px;
-    color: var(--darkBlue);
+    font-size: 40px;
+    color: var(--green);
 }
 
 .intro {

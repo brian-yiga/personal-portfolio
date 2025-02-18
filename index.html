@@ -19,7 +19,7 @@
   </head>
   <body>
     <header>
-      
+      <!-- <img src="./assets/Brian Logo2 (1).jpg" alt="Brian Yiga Logo" class="headerLogo"> -->
       <!--DESKTOP MENU-->
       <nav class="desktopNavBar">
         <ul class="navList">
@@ -30,18 +30,22 @@
       </nav>
       <!--MOBILE MENU-->
       <div class="mobileMenuContainer">
-        <div class="mobileMenuSection">
+        <div class="mobileMenuSection" id="burger_menu">
           <ul class="mobileMenu">
-            <li class="menuList">Home</li>
-            <li class="menuList">Portfolio</li>
-            <li class="menuList">Contact</li>
-            <li class="menuList">About</li>
+            <li class="menuList">
+              <a href="#home" onclick="toggleMenu()">Home</a>
+            </li>
+            <li class="menuList">
+              <a href="#portfolio" onclick="toggleMenu()">Portfolio</a>
+            </li>
+            <li class="menuList"><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li class="menuList"><a href="#aboutMeSection" onclick="toggleMenu()">About</a></li>
           </ul>
         </div>
       </div>
-      <i class="fa-solid fa-bars"></i>
-      
-     
+      <a href="javascript:void(0);" class="burgerIcon" onclick="toggleMenu()"
+        ><i class="fa-solid fa-bars"></i
+      ></a>
     </header>
     <section id="homePage">
       <section>
@@ -329,5 +333,6 @@
         </div>
       </div>
     </section>
+    <script src="./script.js"></script>
   </body>
 </html>
