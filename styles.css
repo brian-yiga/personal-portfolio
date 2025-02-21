@@ -50,7 +50,8 @@ button {
 }
 
 button:hover {
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    transform: translateY(-5px);
     background-color: rgb(218, 196, 122);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     color: var(--darkBlue);
@@ -83,7 +84,18 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    animation: fadeIn 1s ease-out;
+    background-color: rgb(239, 255, 243);
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
 .desktopNavBar {
     display: none;
@@ -133,14 +145,13 @@ header {
 }
 
 
-section {
-    padding: 70px 20px;
-    height: 100vh;
-}
-
 .logo {
     width: 80px;
     border-radius: 7px;
+}
+
+.hero {
+    padding: 3em 2em;
 }
 
 .fa-bars {
@@ -222,6 +233,13 @@ main {
    color: var(--fontColor);
    border: 2px solid var(--lightGrey);
    border-radius: 20px;
+   transition: transform 0.3s ease;
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+
 }
 
 .projectImage {
@@ -356,6 +374,15 @@ main {
     margin-top: 50px;
 }
 
+.form-input {
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  .form-input:focus {
+    border-color: #8EC5FC;
+    background-color: #E8F7FC;
+  }
+  
+
 .nameInput {
     display: flex;
     flex-direction: column;
@@ -441,8 +468,28 @@ textarea {
         margin: 0 auto;
     }
 
+    .navItems {
+        position: relative;
+        padding-bottom: 5px;
+      }
+      .navItems:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--green);
+        transition: width 0.3s ease;
+      }
+      .navItems:hover:after {
+        width: 100%;
+      }
+      
+
     .hero {
-       padding: 5em;
+        padding: 10em 7em 0 7em;
+        height: 100vh;
     }
 
     .socialMedia {
